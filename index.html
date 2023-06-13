@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="style.css">
+<body >
+    <div class="container">
+
+        <form id="myform">
+            <div style="text-align: center;">
+                <h2> Drag And Drop</h2>
+            </div>
+
+            <div style="width: 100%;display: flex;">
+
+                <div style="width: 50%; background-color: #05386b; color: white;" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div style="text-align: center;"><h4>Block 1</h4></div>
+
+            
+                    <img src="car.jpg" style=" visibility:visible" draggable="true" ondragstart="drag(event)" id="drag1"
+                        width="100" height="50"> <!-- To make an element draggable set the draggable attribute to true -->
+                    <div style="display: flex;">
+
+                        <input style="background-color: rgb(194, 18, 18);" type="button" onclick="Hide_Image()" value="Reset">
+
+                        <input style="background-color: green;" type="button" onclick="Show_Image()" value="Show">
+                    </div>
+                </div>
+
+                <div style="width: 50%;  background-color: #05386b; color: white;" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div style="text-align: center;"><h4>Block 2</h4></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    </head>
+</body>
+
+</html>
